@@ -16,8 +16,12 @@ Worker Node2:  192.168.100.99
 
 ### 1) Disable swap & Add kernel Parameters  
 
-$ sudo swapoff -a  
-$ sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab  
+```
+sudo swapoff -a
+```  
+```
+sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+```  
 
 **Load the following kernel modules on all the nodes**  
 
