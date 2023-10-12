@@ -24,11 +24,12 @@ sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 ```  
 
 **Load the following kernel modules on all the nodes**  
-
-$ sudo tee /etc/modules-load.d/containerd.conf <<EOF  
+```
+sudo tee /etc/modules-load.d/containerd.conf <<EOF  
 overlay  
 br_netfilter  
-EOF  
+EOF
+```  
 $ sudo modprobe overlay  
 $ sudo modprobe br_netfilter  
 
